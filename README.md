@@ -1,1 +1,1 @@
-"# iTicket-app" 
+iTicket-App is an Android application developed in Kotlin that facilitates efficient ticket management. With iTicket-App, you can easily create tickets and assign them to employees. The app allows you to view detailed information about other clients, employees, and all tickets created within the system. 
