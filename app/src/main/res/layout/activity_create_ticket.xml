@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_ticket"
+    android:background="@color/white">
+    <ImageButton android:id="@+id/pop_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/back_icon"
+        android:backgroundTint="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView android:id="@+id/cl_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Ticket"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:src="@drawable/ticket_icon"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="50dp"
+            />
+        <EditText
+            android:id="@+id/title_tck"
+            android:layout_width="345dp"
+            android:layout_height="43dp"
+            android:hint="Ticket Name"
+            android:paddingLeft="18dp"
+            android:textSize="16dp"
+            android:background="@drawable/learn_more_border"
+            android:layout_marginTop="50dp"/>
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="345dp"
+            android:layout_height="128dp"
+            android:hint="Add a description"
+            android:gravity="top"
+            android:paddingTop="12dp"
+            android:paddingLeft="18dp"
+            android:textSize="16dp"
+            android:background="@drawable/learn_more_border"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/ass_emp"
+            android:layout_width="345dp"
+            android:layout_height="43dp"
+            android:hint="Assign"
+            android:gravity="top"
+            android:paddingTop="12dp"
+            android:paddingLeft="18dp"
+            android:textSize="16dp"
+            android:background="@drawable/learn_more_border"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:id="@+id/create_ticket"
+            android:layout_width="345dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:text="Create Ticket"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:background="@drawable/filter_btn_border"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tickets"
+    android:background="@color/white">
+    <ImageButton android:id="@+id/pop_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/back_icon"
+        android:backgroundTint="@color/white"/>
+    <TextView android:id="@+id/tk_hd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tickets"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:id="@+id/tk_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tk_hd"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp">
+        <TextView
+            android:id="@+id/tkNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 "
+            android:textSize="40dp"
+            android:textColor="#4D4FFA"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Opened"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tk_no_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tk_no"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Tickets Yet To Be\nClosed"
+        android:textSize="40dp"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/black"/>
+    <Switch
+        android:id="@+id/filter_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:text="A-Z"
+        android:paddingLeft="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tk_no_con"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/filter_sw_full_border"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recTicket"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tk_no_con"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

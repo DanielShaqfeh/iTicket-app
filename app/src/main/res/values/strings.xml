@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kotlin-Project</string>
+
+    <string-array name="SignUp_pos">
+        <item>Sign Up as a Client</item>
+        <item>Sign Up as an Employee</item>
+    </string-array>
+</resources>
